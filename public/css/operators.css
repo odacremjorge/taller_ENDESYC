@@ -1,0 +1,252 @@
+
+html {
+    margin: 0;
+    page-break-after: always;
+    border: 0;
+    
+    padding: 0;
+    
+  }
+  body {
+    font-family: "Times New Roman", serif;
+    margin: 10mm 10mm 10mm 10mm;
+    
+  }
+  br {
+    page-break-after: always;
+    border: 0;
+    margin: 0;
+    padding: 0;
+  }
+  h4{
+      color: rgb(223, 19, 19);
+      font-size: 30px;
+      margin: 0;
+      padding: auto;
+  }
+  h3{
+      
+      margin: 0;
+      padding: 0;
+  }
+  h5{
+      
+      margin: 2px;
+      padding: 0;
+  }
+  a{
+      color: black;
+      font-weight: normal;
+  }
+  table {
+      
+      border-collapse: separate;
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #000;
+      border-radius: 15px;
+      
+      border-spacing: 10px;
+      
+     
+      
+  }
+  
+  table td {
+      
+      border-top: 1px solid var(--second-bg-color);
+      padding: 10px;
+      border: none;
+      border-spacing: 0;
+      border-collapse: collapse;
+      
+     
+      
+  }
+  
+  table th {
+      color:#fff;
+      border: 1px solid #000;
+      border-top: 1px solid var(--second-bg-color);
+      border-bottom: 2px solid var(--second-bg-color);
+      padding: 15px 12px;
+      text-align: center;
+      border-spacing: 0;
+      border-collapse: collapse;
+      background: rgb(51, 14, 218);
+     
+  }
+  
+  .foto1 { 
+      padding: 5px; 
+      margin: 5px; 
+      border: none; 
+      float: left; 
+      width: 180px; 
+      border-radius: 14px;
+  
+  }
+  .foto2 { 
+      padding: 5px; 
+      margin: 5px; 
+      border: 1px solid black; 
+      float: right; 
+      width: 220px;
+      height: 40px; 
+      border-radius: 14px;
+      border-color: rgb(223, 19, 19);
+      
+  }
+  /*div {
+      border: black 1px solid;
+      overflow: auto;
+      width: 470px;
+      height: 60px;
+      text-align: center;
+      padding: 5px; 
+      margin: 5px; 
+      border-radius: 14px;
+  }*/
+  
+  .caja1 { 
+      border: black 1px solid;
+      overflow: auto;
+      width: 250px;
+      height: 60px;
+      text-align: justify;
+      padding: 0; 
+      margin: 0; 
+      border-radius: 14px; 
+      float:left;
+      margin-left:15px;
+  }
+  .caja { 
+      border: black 1px solid;
+      overflow: auto;
+      max-width: 100%;
+      
+      text-align: justify;
+      padding: 4px; 
+      margin: 4px; 
+      border-radius: 14px; 
+      page-break-inside: avoid;
+      /*float:left;
+      margin-left:10px; */
+  }
+  
+  .caja2 { 
+      border: none;
+      overflow: auto;
+      padding: 4px; 
+      margin: 4px; 
+      max-width: 100%;
+      
+      
+  }
+  
+  
+  .table1 {
+      
+      border-collapse: collapse;
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #000;
+      
+     
+      
+  }
+  
+  .table1 th {
+  
+      
+      color:#000;
+      border: 1px solid #000;
+      border-top: 1px solid var(--second-bg-color);
+      border-bottom: 2px solid var(--second-bg-color);
+      padding: 15px 12px;
+      text-align: center;
+      border-spacing: 0;
+      border-collapse: collapse;
+      background: rgb(209, 223, 19);
+      
+  }
+  .table1 td {
+      
+      border-top: 1px solid var(--second-bg-color);
+      padding: 15px;
+      border: 1px solid #000;
+      border-spacing: 0;
+      border-collapse: collapse;
+     
+      
+  }
+  
+  .table2 {
+      
+      border-collapse: collapse;
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #000;
+      
+     
+      
+  }
+  
+  .table2 th {
+  
+      
+      color:#fff;
+      border: 1px solid #000;
+      border-top: 1px solid var(--second-bg-color);
+      border-bottom: 2px solid var(--second-bg-color);
+      padding: 15px 12px;
+      text-align: center;
+      border-spacing: 0;
+      border-collapse: collapse;
+      background: rgb(223, 19, 19);
+      
+  }
+  
+  .table2 td {
+      
+      border-top: 1px solid var(--second-bg-color);
+      padding: 15px;
+      border: 1px solid #000;
+      border-spacing: 0;
+      border-collapse: collapse;
+     
+      
+  }
+caption {
+      padding: 0.3em;
+}
+  
+  
+header {
+    position: fixed;
+    border:2px solid #000;
+    top: 0cm;
+    left: 0cm;
+    right: 0cm;
+    height: 2cm;
+    background-color: #000;
+    color: white;
+    text-align: center;
+    line-height: 30px;
+}
+  
+          
+footer{
+    width:100%;
+    height:50px;
+    position: absolute;
+    text-align: center;
+    line-height: 35px;
+    bottom: 0cm;
+    left: 0cm;
+    right: 0cm;
+    height: 4%;
+    align-self: flex-end;
+    color:rgb(223, 19, 19)
+    
+}

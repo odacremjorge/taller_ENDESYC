@@ -1,0 +1,287 @@
+html {
+    margin: 0;
+    page-break-after: always;
+    border: 0;
+    
+    padding: 0;
+    
+  }
+  body {
+    font-family: "Times New Roman", serif;
+    margin: 8mm 10mm 8mm 10mm;
+    
+  }
+  br {
+    page-break-after: always;
+    border: 0;
+    margin: 0;
+    padding: 0;
+  }
+  h4{
+      color: rgb(2, 4, 114);
+      font-size: 30px;
+      margin: 0;
+      padding: auto;
+  }
+  h3{
+      
+      margin: 0;
+      padding: 0;
+  }
+  h5{
+      
+      margin: 2px;
+      padding: 0;
+      
+  }
+  a{
+      color: black;
+      font-weight: normal;
+  }
+  label{
+    display: block;
+    padding-left: 15px;
+    text-indent: -5px;
+  }
+  
+  input {
+    width: 13px;
+    height: 13px;
+    padding: 0;
+    margin:0;
+    vertical-align: bottom;
+    position: relative;
+    top: -11px;
+    *overflow: hidden;
+    
+    
+}
+  
+
+  .foto1 { 
+      padding: 5px; 
+      margin: 5px; 
+      border: none; 
+      float: left; 
+      width: 180px; 
+      border-radius: 14px;
+  
+  }
+  .foto2 { 
+      padding: 5px; 
+      margin: 5px; 
+      border: 1px solid black; 
+      float: right; 
+      width: 220px;
+      height: 40px; 
+      border-radius: 14px;
+      border-color: rgb(2, 4, 114);
+      
+  }
+  .foto3 { 
+    padding: 5px; 
+    margin: 5px; 
+    border: none; 
+    float: right; 
+    width: 280px; 
+    border-radius: 14px;
+
+}
+    
+  .caja { 
+      border: black 1px solid;
+      overflow: auto;
+      max-width: 100%;
+      width:47.5%;
+      text-align: justify;
+      padding: 4px; 
+      margin: 4px; 
+      border-radius: 14px; 
+      page-break-inside: avoid;
+      float:left;
+      height: 70px;
+      
+  }
+
+  .caja2 { 
+    border: none;
+    overflow: auto;
+    max-width: 100%;
+    width:97.5%;
+    text-align: justify;
+    padding: 4px; 
+    margin: 4px; 
+    border-radius: 14px; 
+    page-break-inside: avoid;
+    float:left;
+    height: 60px;
+    
+}
+
+.caja3 { 
+    border: black 1px solid;
+    overflow: auto;
+    max-width: 100%;
+    width:22.5%;
+    text-align: justify;
+    padding: 4px; 
+    margin: 4px; 
+    border-radius: 10px; 
+    page-break-inside: avoid;
+    float:left;
+    
+    
+}
+
+  .caja1 { 
+    border: black 1px solid;
+    overflow: auto;
+    max-width: 100%;
+    width:31.1%;
+    text-align: justify;
+    padding: 3px; 
+    margin: 4px; 
+    border-radius: 14px; 
+    page-break-inside: avoid;
+    float:left;
+    height: 230px;
+        
+}
+
+
+  
+caption {
+      padding: 0.3em;
+}
+            
+footer{
+    width:100%;
+    height:50px;
+    position: absolute;
+    text-align: center;
+    line-height: 35px;
+    bottom: 0cm;
+    left: 0cm;
+    right: 0cm;
+    height: 4%;
+    align-self: flex-end;
+    color:rgb(223, 19, 19)
+    
+}
+
+table {
+      
+    border-collapse: separate;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 15px;
+    
+    border-spacing: 10px;
+    
+   
+    
+}
+
+table td {
+      
+    border-top: 1px solid var(--second-bg-color);
+    padding: 10px;
+    border: none;
+    border-spacing: 0;
+    border-collapse: collapse;
+    
+   
+    
+}
+
+table th {
+    color:#fff;
+    border: 1px solid #000;
+    border-top: 1px solid var(--second-bg-color);
+    border-bottom: 1px solid var(--second-bg-color);
+    padding: 15px 12px;
+    text-align: center;
+    border-spacing: 0;
+    border-collapse: collapse;
+    
+   
+}
+
+.tableAuto {
+      
+    border-collapse: separate;
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    float:left;
+    border-spacing: 10px;
+}
+.tableAuto td {
+      
+    border-top: 1px solid var(--second-bg-color);
+    padding: 10px;
+    border: 1px solid #000;;
+    border-spacing: 0;
+    border-collapse: collapse;
+    vertical-align: top;
+    border-top: none;
+}
+
+.tableAuto th {
+    color:#fff;
+    border: 1px solid #000;
+    border-top: 1px solid var(--second-bg-color);
+    border-bottom: 1px solid var(--second-bg-color);
+    padding: 13px ;
+    text-align: center;
+    border-spacing: 0;
+    border-collapse: collapse;
+    vertical-align: top;
+   
+}
+
+.caja4 { 
+    border: black 1px solid;
+    overflow: auto;
+    max-width: 100%;
+    width:50%;
+    padding: 4px; 
+    margin: 4px; 
+    border-radius: 2px; 
+    height: 180px;
+    float:left;
+    
+    
+}
+
+.caja5 { 
+    border: black 1px solid;
+    overflow: auto;
+    max-width: 100%;
+    width:38.5%;
+    text-align: justify;
+    padding: 4px; 
+    margin: 4px; 
+    border-radius: 5px; 
+    page-break-inside: avoid;
+    float:left;
+    height: 60px;
+    
+}
+.caja6 { 
+    border: none;
+    overflow: auto;
+    max-width: 100%;
+    width:7.5%;
+    text-align: justify;
+    padding: 4px; 
+    margin: 4px; 
+    border-radius: 14px; 
+    page-break-inside: avoid;
+    float:left;
+    height: 60px;
+    
+}
+
