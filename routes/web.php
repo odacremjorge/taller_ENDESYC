@@ -10,6 +10,7 @@ use App\Http\Controllers\OTController;
 use App\Http\Controllers\ReplacementController;
 use App\Http\Controllers\OseController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\DemandController;
 
 
 Route::get('/', function () {
@@ -69,6 +70,9 @@ Route::get('/record/recordPDF/{id}', [App\Http\Controllers\RecordController::cla
 
 //Rutas Repuestos
 Route::resource('replacement',ReplacementController::class)->names('replacement');
+
+//Rutas Solicitud
+Route::resource('demand',DemandController::class)->names('demand');
 
 Route::group(['middleware' => ['auth', 'administrador']], function () {
     

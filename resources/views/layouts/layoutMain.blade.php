@@ -90,6 +90,14 @@
                     <h4>Historiales</h4>
                 </div>
             </a>
+
+            <a href="{{ url('/demand') }}">
+                <div class="option">
+                    <i class="far fa-file-word" title="Solicitudes"></i>
+                    <h4>Solicitudes</h4>
+                </div>
+            </a>
+
             @if ( Auth::user()->role == 'ADMINISTRADOR')
             <a href="{{ url('/report') }}">
                 <div class="option">
