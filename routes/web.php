@@ -73,6 +73,8 @@ Route::resource('replacement',ReplacementController::class)->names('replacement'
 
 //Rutas Solicitud
 Route::resource('demand',DemandController::class)->names('demand');
+Route::get('/demand/create/{id}', [App\Http\Controllers\DemandController::class, 'create'])->name('create_demand');
+
 
 Route::group(['middleware' => ['auth', 'administrador']], function () {
     

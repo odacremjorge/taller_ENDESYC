@@ -16,6 +16,7 @@ class Demand extends Model
         'jobDemand',
         'date_approval',
         'workshop_demand',
+        'ccDemand',
         'vehicle_id',
         
      ];

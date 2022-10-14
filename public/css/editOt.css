@@ -866,3 +866,58 @@ button {
  .card:hover {
   box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
  }
+
+ input.jobs{
+  width: 94%;
+  background: rgba(4, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px solid #1f53c5;
+  font-family: 'calibri';
+  font-size: 18px;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+.remove{
+  width: 5%;
+  background: #000;
+  border: 1px solid #ff0000;
+  padding: 12px;
+  color: white;
+  margin: 1px 0;
+  font-size: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 14px;
+  float: right;
+  text-align: center;
+  
+
+}
+.remove:hover {
+  background-color: #e72e0d;
+  
+}
+
+.add{
+  width: 100%;
+  background: rgba(4, 0, 0, 0.5);
+  border: 1px solid #1f53c5;
+  padding: 12px;
+  color: white;
+  margin: 30px 0;
+  font-size: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 14px;
+  text-align: center;
+  
+}
+.add:hover {
+  background-color: #1f53c5;
+  
+}

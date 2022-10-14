@@ -17,9 +17,9 @@ class CreateDemandsTable extends Migration
             $table->bigIncrements('id');
             $table->string('driver_demand', 50);
             $table->integer('mileage_demand');
-            $table->datetime('date_demand');
+            $table->date('date_demand');
             $table->string('section_demand', 50);
-            $table->datetime('date_approval')->nullable();
+            $table->date('date_approval')->nullable();
             $table->string('workshop_demand', 50)->nullable();
             $table->bigInteger('vehicle_id')->unsigned();
             $table->foreign('vehicle_id')->references('id')->on('vehicles')->onDelete('cascade');
