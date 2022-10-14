@@ -28,7 +28,16 @@ class DemandController extends Controller
     public function create($id)
     {
         //
-        $demands=Demand::select('demands.id','vehicles.cia')
+        $demands=Demand::select('demands.id','vehicles.cia', 'vehicles.plate',
+        'driver_demand',
+        'mileage_demand',
+        'date_demand',
+        'section_demand',
+        'jobDemand',
+        'date_approval',
+        'workshop_demand',
+        'ccDemand',
+        )
         ->join('vehicles','demands.vehicle_id','=','vehicles.id')
         ->where('vehicle_id',$id)->get();
 

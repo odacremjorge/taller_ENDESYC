@@ -1,4 +1,4 @@
-@extends('layouts.layoutEditOt')
+@extends('layouts.layoutSecondary')
 
 @section('content')
 
@@ -6,7 +6,7 @@
 <main>
         
     <section class="form-register">
-        <center><h1>SOLICITUD PARA LA CIA {{$vehicle->cia}}</h1><br></center>
+        <center><h1>SOLICITUD PARA LA CIA {{$vehicle->cia}} | {{$vehicle->plate}}</h1><br></center>
        
         
             <div class="row">
@@ -96,20 +96,17 @@
                     <center> <label name="Cilindrada">Lista de Solicitudes</label> </center>
                     </div>
                     <div class="col-xl-12">
-                        <div class="container">
-                            <div class="row-fluid" style="margin-top: 0">
-                                <div class="span12">
-                                    <div class="widget-box">
-                                        <div class="widget-content">
+                        <div class="widget-content">
                                             <table id="myTable" class="display nowrap cell-border" style="width:100%">
                                                 <thead>
                                                     <tr>
-                                                        <th>Codigo</th>
-                                                        <th>Descripcion</th>
-                                                        <th>No de Pieza</th>
-                                                        <th>Solicitante</th>
-                                                        <th>Cantidad</th>
-                                                        <th>Unidad</th>
+                                                        <th>Solicitud N°</th>
+                                                        <th>Conductor</th>
+                                                        <th>Kilometraje</th>
+                                                        <th>Fecha</th>
+                                                        <th>Centro de Costos</th>
+                                                        <th>Sección</th>
+                                                        
                                                        <!-- <th>Precio (Bs.)</th> -->
                                                         <th>Acción</th>
                                                     </tr>
@@ -120,12 +117,12 @@
                                                 <tbody>
                                                
                                                     <tr>
-                                                        <td style="font-size:12px">{{$data->id}}</td>
-                                                        <td style="font-size:12px"></td> 
-                                                        <td style="font-size:12px"></td>   
-                                                        <td style="font-size:12px"></td>
-                                                        <td style="font-size:12px"></td>  
-                                                        <td style="font-size:12px"></td>
+                                                        <td style="color:black">{{$data->id}}</td>
+                                                        <td style="color:black">{{$data->driver_demand}}</td> 
+                                                        <td style="color:black">{{$data->mileage_demand}}</td>   
+                                                        <td style="color:black">{{$data->date_demand}}</td>
+                                                        <td style="color:black">{{$data->ccDemand}}</td>  
+                                                        <td style="color:black">{{$data->section_demand}}</td>
                                                        <td><center>
 
                                                     <!--<a href="#" class="btn" title="Editar"><i class="fa fa-edit" ></i></a>-->
@@ -154,10 +151,7 @@
                                             @endforeach
                                             </table>
                                         </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        
                     </div>  
             </div>
 </section>
@@ -201,17 +195,14 @@
 <!-- Responsive -->
 <script src="https://cdn.datatables.net/responsive/2.2.7/js/dataTables.responsive.min.js"></script>
 <script src="https://cdn.datatables.net/responsive/2.2.7/js/responsive.bootstrap4.min.js"></script>
+
 @endsection
 
 @section('myscripts')
 <!-- Scripts -->
 
-<script src="{{ asset('js/app.js') }}" defer></script>
     <script src="{{ asset('js/ots.js') }}" defer></script>
-    <script src="{{ asset('js/app2.js') }}" defer></script>
-    <!-- <script src="{{ asset('js/tableOperators.js') }}" defer></script>
-    <script src="{{ asset('js/canvas.js') }}" defer></script>-->
-    
+   
     
 @endsection
 
