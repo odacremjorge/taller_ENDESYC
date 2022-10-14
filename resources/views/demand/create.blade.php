@@ -131,7 +131,7 @@
                                                     <form
                                                             action=""
                                                             method="POST">
-                                                            <a href="" class="btn" title="Editar"><i class="fa fa-edit" ></i></a>
+                                                            <a href="" class="btn" title="Imprimir solicitud"><i class="fa fa-print" ></i></a>
                                                    
                                                             @csrf
                                                             @method('DELETE')
