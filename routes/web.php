@@ -74,7 +74,7 @@ Route::resource('replacement',ReplacementController::class)->names('replacement'
 //Rutas Solicitud
 Route::resource('demand',DemandController::class)->names('demand');
 Route::get('/demand/create/{id}', [App\Http\Controllers\DemandController::class, 'create'])->name('create_demand');
-
+Route::get('/demand/demandPDF/{id}', [App\Http\Controllers\DemandController::class, 'demandPDF'])->name('demandPDF');
 
 Route::group(['middleware' => ['auth', 'administrador']], function () {
     

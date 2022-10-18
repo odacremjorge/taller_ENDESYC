@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Demand;
 use App\Models\Vehicle;
 use Illuminate\Http\Request;
+use PDF;
 
 class DemandController extends Controller
 {
@@ -121,5 +122,24 @@ class DemandController extends Controller
     public function destroy(Demand $demand)
     {
         //
+        $demand->delete();
+       
+       
+        return redirect()->back()->with('Mensaje', 'HEY, Solicitud eliminado satisfactoriamente!!!');
     }
+    public function demandPDF($id)
+    {
+       
+      
+
+        $demands = Demand::findOrFail($id);
+        $aux = $demands->vehicle_id;
+        $vehicle = Vehicle::findOrFail($aux);
+
+        $pdf = PDF::loadView('demand.demandPDF',['demands'=>$demands, 'vehicle'=>$vehicle]);
+        
+        return $pdf->stream('demand.demandPDF',array('Attachment'=>false));
+       
+    }
+
 }

@@ -106,8 +106,6 @@
                                                         <th>Fecha</th>
                                                         <th>Centro de Costos</th>
                                                         <th>Sección</th>
-                                                        
-                                                       <!-- <th>Precio (Bs.)</th> -->
                                                         <th>Acción</th>
                                                     </tr>
                                                 </thead>
@@ -129,23 +127,20 @@
                                                    
                                                                                                        
                                                     <form
-                                                            action=""
+                                                            action="{{ route('demand.destroy', $data->id) }}"
                                                             method="POST">
-                                                            <a href="" class="btn" title="Imprimir solicitud"><i class="fa fa-print" ></i></a>
+                                                            <a href="/demand/demandPDF/{{$data->id}}" target="_blank" class="btn" title="Imprimir solicitud"><i class="fa fa-print" ></i></a>
                                                    
                                                             @csrf
                                                             @method('DELETE')
                                                             <button type="submit" class="btn1"
-                                                                    onclick="return confirm('¿Seguro que quiere eliminar el registro del repuesto?')"
+                                                                    onclick="return confirm('¿Seguro que quiere eliminar el registro de la solicitud?')"
                                                                     title="Clic para eliminar" data-toggle="tooltip"><i
                                                                     class="fa fa-trash"></i></button>
                                                     </form>
                                                 
 
-                                                <!--    <a href="#" class="btn4" title="Imprimir"><i class="fa fa-print"></i></a>
-                                                    <a href="#" class="btn2" title="Finalizar"><i class="fa fa-clipboard-check"></i></a>
-                                                    <a href="#" class="btn3" title="Anular"  onclick="return confirm('¿Seguro que quiere anular La Orden de Trabajo?')"><i class="fa fa-font"></i></a> -->
-                                                    </center></td></tr>
+                                                 </center></td></tr>
                                                          
                                                 </tbody>
                                             @endforeach
@@ -174,7 +169,8 @@
     });
 </script>
 
-
+<link href="https://code.jquery.com/jquery-3.5.1.js" rel="stylesheet" />
+<link href="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js" rel="stylesheet" />
 
 
 <link href="https://cdn.datatables.net/1.10.12/css/jquery.dataTables.css" rel="stylesheet" />
@@ -201,7 +197,7 @@
 @section('myscripts')
 <!-- Scripts -->
 
-    <script src="{{ asset('js/ots.js') }}" defer></script>
+    <script src="{{ asset('js/demanda.js') }}" defer></script>
    
     
 @endsection
