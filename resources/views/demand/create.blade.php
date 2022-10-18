@@ -23,8 +23,15 @@
             <input type="hidden" name="vehicle_id" value="{{$vehicle->id}}">
                 <div class="col-xl-4">
                     <label>Conductor:</label><br><br>
-                        <input class="controls" type="text" name="Conductor" id="Conductor" placeholder="Ingrese el conductor *">
-                         <br>    
+                    <select class="controls"  name="Conductor" id="Conductor" placeholder="Ingrese el Conductor">
+                         @foreach ($operators as $data)  
+                         @if ($data->type_operator == 'Conductor')     
+                        <option value="{{$data->name_operator}}">{{$data->name_operator}}</option>
+                        @endif
+                        @endforeach
+                        
+                </select>  
+                               <br>    
                 </div>
 
                 <div class="col-xl-4">

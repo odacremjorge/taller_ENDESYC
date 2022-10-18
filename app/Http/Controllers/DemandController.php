@@ -6,6 +6,7 @@ use App\Models\Demand;
 use App\Models\Vehicle;
 use Illuminate\Http\Request;
 use App\Models\User;
+use App\Models\Operator;
 use Illuminate\Support\Facades\Auth;
 use PDF;
 
@@ -43,9 +44,9 @@ class DemandController extends Controller
         )
         ->join('vehicles','demands.vehicle_id','=','vehicles.id')
         ->where('vehicle_id',$id)->get();
-
+        $operators = Operator::all();
         $vehicle = Vehicle::findOrFail($id);
-        return view('demand.create', ['vehicle' => $vehicle, 'demands' => $demands]);
+        return view('demand.create', ['vehicle' => $vehicle, 'demands' => $demands, 'operators' => $operators]);
         
     }
 
