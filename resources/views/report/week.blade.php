@@ -11,7 +11,7 @@
                 
                 <div class="col-xl-4">
                 <label>Ingrese el dia inicio (aaaa-mm-dd)</label><br><br>
-                        <input class="controls @error('DayInit') is-invalid @enderror" type="text" name="DayInit" id="DayInit" placeholder="Ingrese el dia de inicio *" maxlength="20" onKeypress="if ((event.keyCode > 0 && event.keyCode < 32)||(event.keyCode > 32 && event.keyCode < 45)||(event.keyCode > 45 && event.keyCode < 48)||(event.keyCode > 58 && event.keyCode < 256)) event.returnValue = false;">
+                        <input class="controls @error('DayInit') is-invalid @enderror" type="date" name="DayInit" id="DayInit" placeholder="Ingrese el dia de inicio *" maxlength="20" onKeypress="if ((event.keyCode > 0 && event.keyCode < 32)||(event.keyCode > 32 && event.keyCode < 45)||(event.keyCode > 45 && event.keyCode < 48)||(event.keyCode > 58 && event.keyCode < 256)) event.returnValue = false;">
                         @error('DayInit')
                                 <div class="alert alert-danger">{{ $message }}</div>
                         @enderror 
@@ -20,7 +20,7 @@
 
                 <div class="col-xl-4">
                 <label>Ingrese el dia final (aaaa-mm-dd)</label><br><br>
-                        <input class="controls  @error('DayEnd') is-invalid @enderror" type="text" name="DayEnd" id="DayEnd" placeholder="Ingrese el dia final *" maxlength="20" onKeypress="if ((event.keyCode > 0 && event.keyCode < 32)||(event.keyCode > 32 && event.keyCode < 45)||(event.keyCode > 45 && event.keyCode < 48)||(event.keyCode > 58 && event.keyCode < 256)) event.returnValue = false;">
+                        <input class="controls  @error('DayEnd') is-invalid @enderror" type="date" name="DayEnd" id="DayEnd" placeholder="Ingrese el dia final *" maxlength="20" onKeypress="if ((event.keyCode > 0 && event.keyCode < 32)||(event.keyCode > 32 && event.keyCode < 45)||(event.keyCode > 45 && event.keyCode < 48)||(event.keyCode > 58 && event.keyCode < 256)) event.returnValue = false;">
                         @error('DayEnd')
                                 <div class="alert alert-danger">{{ $message }}</div>
                         @enderror 

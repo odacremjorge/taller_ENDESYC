@@ -12,7 +12,7 @@
                 
                 <div class="col-xl-6">
                 <label>Ingrese el dia del informe requerido (aaaa-mm-dd)</label><br><br>
-                        <input class="controls @error('Day') is-invalid @enderror" type="text" name="Day" id="Day" placeholder="Ingrese el dia del informe requerido *" maxlength="20" onKeypress="if ((event.keyCode > 0 && event.keyCode < 32)||(event.keyCode > 32 && event.keyCode < 45)||(event.keyCode > 45 && event.keyCode < 48)||(event.keyCode > 58 && event.keyCode < 256)) event.returnValue = false;">
+                        <input class="controls @error('Day') is-invalid @enderror" type="date" name="Day" id="Day" placeholder="Ingrese el dia del informe requerido *" maxlength="20" onKeypress="if ((event.keyCode > 0 && event.keyCode < 32)||(event.keyCode > 32 && event.keyCode < 45)||(event.keyCode > 45 && event.keyCode < 48)||(event.keyCode > 58 && event.keyCode < 256)) event.returnValue = false;">
                         @error('Day')
                                 <div class="alert alert-danger">{{ $message }}</div>
                         @enderror 

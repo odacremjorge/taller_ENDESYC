@@ -102,12 +102,19 @@
     
 @endforeach
 
+@if ( $total != 0)
 @php
 $porc_final=round(($cont_finalizados*100)/$total, 2);
 $porc_abierto=round(($cont_abiertos*100)/$total, 2);
 $porc_anulado=round(($cont_anulados*100)/$total, 2);
 @endphp
-
+@else
+@php
+$porc_final=1;
+$porc_abierto=1;
+$porc_anulado=1;
+@endphp
+@endif
 <div class="board">
         <div class="titulo_grafica">
             <h3 class="t_grafica">Estadisticas de las Ordenes de Trabajo</h3>
