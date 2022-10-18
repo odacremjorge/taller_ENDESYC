@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Models\Demand;
 use App\Models\Vehicle;
 use Illuminate\Http\Request;
+use App\Models\User;
+use Illuminate\Support\Facades\Auth;
 use PDF;
 
 class DemandController extends Controller
@@ -128,8 +130,7 @@ class DemandController extends Controller
         return redirect()->back()->with('Mensaje', 'HEY, Solicitud eliminado satisfactoriamente!!!');
     }
     public function demandPDF($id)
-    {
-       
+    {    
       
 
         $demands = Demand::findOrFail($id);

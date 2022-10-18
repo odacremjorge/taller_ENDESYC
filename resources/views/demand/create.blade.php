@@ -109,41 +109,41 @@
                                                         <th>Acción</th>
                                                     </tr>
                                                 </thead>
-                                            @foreach ($demands as $data)
+                                                @foreach ($demands as $data)
                             
                        
-                                                <tbody>
-                                               
-                                                    <tr>
-                                                        <td style="color:black">{{$data->id}}</td>
-                                                        <td style="color:black">{{$data->driver_demand}}</td> 
-                                                        <td style="color:black">{{$data->mileage_demand}}</td>   
-                                                        <td style="color:black">{{$data->date_demand}}</td>
-                                                        <td style="color:black">{{$data->ccDemand}}</td>  
-                                                        <td style="color:black">{{$data->section_demand}}</td>
-                                                       <td><center>
-
-                                                    <!--<a href="#" class="btn" title="Editar"><i class="fa fa-edit" ></i></a>-->
-                                                   
-                                                                                                       
-                                                    <form
-                                                            action="{{ route('demand.destroy', $data->id) }}"
-                                                            method="POST">
-                                                            <a href="/demand/demandPDF/{{$data->id}}" target="_blank" class="btn" title="Imprimir solicitud"><i class="fa fa-print" ></i></a>
-                                                   
-                                                            @csrf
-                                                            @method('DELETE')
-                                                            <button type="submit" class="btn1"
-                                                                    onclick="return confirm('¿Seguro que quiere eliminar el registro de la solicitud?')"
-                                                                    title="Clic para eliminar" data-toggle="tooltip"><i
-                                                                    class="fa fa-trash"></i></button>
-                                                    </form>
+                                                    <tbody>
                                                 
+                                                        <tr>
+                                                            <td style="color:black">{{$data->id}}</td>
+                                                            <td style="color:black">{{$data->driver_demand}}</td> 
+                                                            <td style="color:black">{{$data->mileage_demand}}</td>   
+                                                            <td style="color:black">{{$data->date_demand}}</td>
+                                                            <td style="color:black">{{$data->ccDemand}}</td>  
+                                                            <td style="color:black">{{$data->section_demand}}</td>
+                                                        <td><center>
 
-                                                 </center></td></tr>
-                                                         
-                                                </tbody>
-                                            @endforeach
+                                                        <!--<a href="#" class="btn" title="Editar"><i class="fa fa-edit" ></i></a>-->
+                                                    
+                                                                                                        
+                                                        <form
+                                                                action="{{ route('demand.destroy', $data->id) }}"
+                                                                method="POST">
+                                                                <a href="/demand/demandPDF/{{$data->id}}" target="_blank" class="btn" title="Imprimir solicitud"><i class="fa fa-print" ></i></a>
+                                                    
+                                                                @csrf
+                                                                @method('DELETE')
+                                                                <button type="submit" class="btn1"
+                                                                        onclick="return confirm('¿Seguro que quiere eliminar el registro de la solicitud?')"
+                                                                        title="Clic para eliminar" data-toggle="tooltip"><i
+                                                                        class="fa fa-trash"></i></button>
+                                                        </form>
+                                                    
+
+                                                        </center></td></tr>
+                                                            
+                                                        </tbody>
+                                                @endforeach
                                             </table>
                                         </div>
                         
@@ -169,14 +169,13 @@
     });
 </script>
 
-<link href="https://code.jquery.com/jquery-3.5.1.js" rel="stylesheet" />
-<link href="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js" rel="stylesheet" />
+
 
 
 <link href="https://cdn.datatables.net/1.10.12/css/jquery.dataTables.css" rel="stylesheet" />
 <link href="https://cdn.datatables.net/buttons/1.2.2/css/buttons.dataTables.css" rel="stylesheet" />
 <!-- estilos de la tabla -->
-<link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.7/css/responsive.bootstrap4.min.css">
+
 
 
 <!-- datatables -->

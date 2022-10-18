@@ -11,6 +11,7 @@ $(document).ready(function () {
         backgroundColor: 'transparent',
         fontSize: 'large',
         info:'true',
+       
         order: [
             [0, 'desc']
         ], 

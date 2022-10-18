@@ -138,7 +138,7 @@
 </div>
 <div class="caja6">
     <br><br>
-    <center><h3>Aprobado por: <a></a></h3></center>
+    <center><h3>Aprobado por: <a>{{Auth::user()->name}}</a></h3></center>
 </div>
 <br><br><br><br><br><br>
 <h5 style="color:rgb(2, 10, 53)">RECIBIDO EN TALLER POR:<a>.....................................................................................................................................................................................</a></h5> 
